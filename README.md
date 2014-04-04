@@ -20,18 +20,12 @@ this cleans up the generated bundle files
 
 ## Structure
 
-The top level browserify project require()s a module called "my-module" that has very basic template, css, and js files.
-
-The test suite calls the parcelify command on the top level project's main.js to test the generation of bundle files.
-
-It then calls parcelify with the watch option to test realtime updating of the bundles based upon modification of files in "my-module"
-
-The top level test script is run-cli-tests.sh, which should be executable.  The sub test scripts are in the directory called cli-tests.
+The top level browserify project require()s a module called "my-module" that has very basic template, css, and js files.  The test suite calls the parcelify command on the top level project's main.js to test the generation of bundle files. It then calls parcelify with the watch option to test realtime updating of the bundles based upon modification of files in "my-module"  The top level test script is run-cli-tests.sh, which should be executable.  The sub test scripts are in the directory called cli-tests.
 
 ## Current issues
 
-* an error is generated when testing the module watching `Watch error: ReferenceError: Parcel is not defined`
-* the watch testing doesn't cover templates or javascript yet, should be easy to add.
+* an error is generated when testing module watching `Watch error: ReferenceError: Parcel is not defined`
+* watch testing doesn't cover templates or javascript yet, should be easy to add.
 * bundle testing doesn't test the content of the bundles for correctness, only that they exist.  This is a TODO.
 * sleep statements are used to give a chance for generated files to appear.  This cannot be truely trusted and another mechanism needs to be used.
 * not driven by any sort of modern javascript utilities like grunt or tape, which is a TODO.
