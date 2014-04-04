@@ -20,7 +20,7 @@ this cleans up the generated bundle files
 
 ## Structure
 
-The top level browserify project require()s a module called "my-module" that has very basic template, css, and js files.  The test suite calls the parcelify command on the top level project's main.js to test the generation of bundle files. It then calls parcelify with the watch option to test realtime updating of the bundles based upon modification of files in "my-module"  The top level test script is run-cli-tests.sh, which should be executable.  The sub test scripts are in the directory called cli-tests.
+The top level browserify project require()s a module called `my-module` that has very basic template, css, and js files.  The test suite calls the parcelify command on the top level project's main.js to test the generation of bundle files. It then calls parcelify with the watch option to test realtime updating of the bundles based upon modification of files in `my-module`.  The top level test script is called `run-cli-tests.sh`, which should be marked executable.  The sub-test scripts are in a directory called `cli-tests`.
 
 ## Current issues
 
