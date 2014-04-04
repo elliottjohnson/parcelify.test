@@ -16,6 +16,7 @@ do
 	    echo "  -h: this help menu."
 	    echo "  -c: clean up old bundle files and exit."
 	    echo "  -d: run the tests with debugging."
+	    echo "    : without arguments runs the suite without debugging."
 	    exit 0
 	    ;;
 	c)

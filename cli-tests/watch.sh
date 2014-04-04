@@ -43,8 +43,7 @@ function WATCH_TEST() {
     if [ $DEBUG != 1 ]
     then
 	trap "kill $PARCELIFY_PID; rm $TEMPCSSFILE" EXIT
-    elif
-    then
+    else
 	debug_echo "Created tempfile: $TEMPCSSFILE."
 	debug_echo "!! In debug mode we do not clean up these files upon error !!"
     fi
