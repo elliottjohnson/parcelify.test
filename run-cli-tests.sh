@@ -5,7 +5,7 @@ MYMODULE="./node_modules/my-module/"
 WATCHBUNDLE="watchBundle.css"
 JSBUNDLE="jsBundle.js"
 CSSBUNDLE="cssBundle.css"
-TMPLBUNDLE="tmplBundle.tmpl"
+#TMPLBUNDLE="tmplBundle.tmpl"
 DEBUG=""
 
 while getopts "hdc" arg
@@ -35,4 +35,6 @@ cli-tests/cli-tests.sh $DEBUG \
     -w $WATCHBUNDLE \
     -j $JSBUNDLE \
     -c $CSSBUNDLE \
-    -t $TMPLBUNDLE
+ #   -t $TMPLBUNDLE
+
+exit 0

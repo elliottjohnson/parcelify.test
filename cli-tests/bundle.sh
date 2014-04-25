@@ -28,7 +28,7 @@ function BUNDLE_TEST() {
     # if we have an output around we want to remove it.
     if [ -e $BUNDLE_FILENAME ]
     then
-	debug_echo "Cleaning up old template bundle file: $TMPLBUNDLE."
+	debug_echo "Cleaning up old bundle file: $BUNDLE_FILENAME."
 	rm $BUNDLE_FILENAME
     fi
 
